@@ -15,6 +15,13 @@ header {
 .btn:hover {
     text-decoration: underline;
 }
+.btn_gray {
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    text-decoration: none;
+    flex-grow: 1;
+}
 
 /* HEADER */
 header > .inner {
@@ -158,7 +165,7 @@ header .main-menu .menu-item .sub__list a {
     width: 100%;
     height: 884px;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: #fff;
 }
 .rian_intro .intro_main_content {
     position: relative;
@@ -199,33 +206,149 @@ header .main-menu .menu-item .sub__list a {
     color: #000;
 
 }
+/* 앱스토어 버튼 */
 .app_list {
-    position: relative;
-    top: 500px;
-    left: 90px;
+    position: absolute;
+    top: 480px;
     width: 400px;
-    height: 100px;
-    /* background-color: #999; */
-
+    height: 50px;
+    margin-left: 87px;
 }
-.app_list >li {
-    /* background-color: pink;   */
+.app_list li {
+    float: left;
+    width: 170px;
+    height: 80px;
+    padding: 0 7px;
 }
-.app_list .app_link {
-    padding-left: 5px;
+.app_list li .app_link {
+    display: block;
+    width: 170px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
     text-decoration: none;
     color: #000;
+    clear: both;
 }
-.app_list .app_link:nth-child(2) {
-    padding-left: 100px;
+.app_list li:nth-child(2) >a {
+    margin-left: 30px;
 }
-.app_list > li .img_kabang_goo {
+/* .intro_main_content .app_list .img_kabang_goo {
+    background: url("/image/googleplay_logo.png");
 }
+.intro_main_content .app_list li .img_kabang_app {
+    background: url("/image/apple_logo.png");
+} */
 
 .background_line {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 720px;
-    top: 0;
     background-color: #ffef6b;
 }
+
+/* 2번째 영역 */
+.intro_cont {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    max-width: 1240px;
+    background-color: #fff;
+}
+.cont_img {
+    position: relative;
+    width: 1240px;
+}
+.cont_img img {
+    position: absolute;
+    left: 440px;
+    width: 470px;
+    height: 670px;
+}
+.cont_txt {
+    display: inline-block;
+    position: relative;
+    top: 220px;
+    left: 1050px;
+    color: #000;
+}
+.cont_txt .sec_cont {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+/* 공통- 서브콘텐츠 */
+.subcont {
+    margin-top: 25px;
+    margin-left: 3px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.btn_content {
+    position: absolute;
+    left: 1050px;
+    bottom: 240px;
+    width: 255px;
+    height: 56px;
+}
+.btn_content .bank_link {
+    position: absolute;
+    top: 20px;
+    left: 44px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+.sec_ico {
+    width: 7px;
+    height: 9px;
+    margin-left: 5px;
+}
+.intro_cont_divider {
+    width: 100%;
+    height: 30px;
+    background-color: #fafafa;
+}
+
+/* 3번째 영역 */
+.left_cont_txt {
+    position: relative;
+    top: 220px;
+    left: 40%;
+}
+.thir_cont {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.link_deposit {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    color: #333;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.btn_third a:nth-child(2) {
+    margin-left: 10px;
+}
+
+.cont_img .img_savings {
+    position: relative;
+    bottom: 180px;
+    left: 1100px;
+    width: 409px;
+    height: 730px;
+}
+
